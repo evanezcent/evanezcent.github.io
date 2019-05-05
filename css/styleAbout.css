@@ -29,6 +29,12 @@ html{
     width: 20%;
     height: 20%;
 }
-.jumbotron#content3{
+.jumbotron{
     background: none;
+    border: 5px solid white;
+    border-radius: 1em;
+}
+#content1{
+    border: 5px solid white;
+    border-radius: 1em;
 }
