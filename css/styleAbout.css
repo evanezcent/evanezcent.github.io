@@ -1,0 +1,47 @@
+html{
+    scroll-behavior: smooth;
+}
+#content1 p{
+    font-family: tahoma
+}
+ body{
+     background: url('main.jpg') no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     font-family: Arial;
+ }
+ #profilPic ol li{
+    color: whitesmoke;
+    font-family: verdana;
+ }
+ #profilPic ol li a{
+    text-decoration: none;
+    color: whitesmoke!important;
+ }
+ #profilPic h6{
+     
+     color: whitesmoke;
+     font-family: verdana;
+ }
+ #profilPic ol li .btn-dark{
+    background-color: transparent;
+ }
+ #content1 p{
+     color: white;
+ }
+ .jumbotron h1{
+     background-color: black;
+     color: white
+ }
+ .jumbotron h2{
+    margin-bottom: 0%;
+}
+#content3 a :hover{
+    width: 20%;
+    height: 20%;
+}
+.jumbotron#content3{
+    background: none;
+}
