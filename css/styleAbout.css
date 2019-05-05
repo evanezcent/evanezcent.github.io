@@ -12,25 +12,12 @@ html{
      background-size: cover;
      font-family: Arial;
  }
- #profilPic ol li{
-    color: whitesmoke;
-    font-family: verdana;
- }
- #profilPic ol li a{
-    text-decoration: none;
-    color: whitesmoke!important;
- }
- #profilPic h6{
-     
-     color: whitesmoke;
-     font-family: verdana;
- }
- #profilPic ol li .btn-dark{
-    background-color: transparent;
- }
  #content1 p{
      color: white;
  }
+ #content1 h6{
+    color: white;
+}
  .jumbotron h1{
      background-color: black;
      color: white
