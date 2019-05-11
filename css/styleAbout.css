@@ -10,7 +10,11 @@ html{
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-     font-family: Arial;
+     font-family: monospace;
+ }
+ h6{
+     font-family: cursive;
+     font-size: 100%;
  }
  #content1 p{
      color: white;
