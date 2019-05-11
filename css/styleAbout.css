@@ -19,8 +19,8 @@ html{
     color: white;
 }
  .jumbotron h1{
-     background-color: black;
-     color: white
+     background-color: white;
+     color: black;
  }
  .jumbotron h2{
     margin-bottom: 0%;
@@ -37,4 +37,11 @@ html{
 #content1{
     border: 5px solid white;
     border-radius: 1em;
+}
+.page-footer{
+    background-color: white;
+}
+.page-footer .author{
+    color: black;
+    font-weight: bold;
 }
