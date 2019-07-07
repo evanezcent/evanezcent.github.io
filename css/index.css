@@ -1,0 +1,217 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width:100vw;
+    width:100vw; 
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    font-family: monospace;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#profil{
+    width: 27vw;
+    display:flex;
+    flex-direction: column;
+    padding:10px 30px;
+    padding-right: 15px;
+    position: fixed;
+    height: 90vh;
+}
+
+#profil, #profpic, #nama, #bio{
+    margin: 5px 10px;
+}
+
+#profpic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 1em;
+}
+
+#bio{
+    color: white;
+    text-align: left;
+}
+
+#bio p, h4{
+    font-size: 17px
+}
+#nama, h2{
+    color: white
+}
+#references .view {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    background: #fff
+}
+#references .view .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+
+#references .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+}
+#references .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    position: relative;
+    color: #fff;
+    padding: 7px 15px;
+    text-align: center
+}
+#references .view a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 35px;
+    padding: 7px 14px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px rgb(31, 31, 31);
+}
+#references .view a:hover {
+    box-shadow: 0 0 5px rgb(44, 44, 44)
+}
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(63, 2, 53, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a {
+    transition-delay: 0.2s;
+}
+#content{
+    width: 90vw;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-left: 40vw;
+    height: 100vh;
+}
+#about{
+    font-size: 1.7em;
+    color: white;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+.page-footer{
+    background-color: white;
+}
+.page-footer .author{
+    color: black;
+    font-weight: bold;
+}
+#chat{
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(315deg, #380036 26%, #0cbaba 74%);
+    border-radius: 0.5em;
+    text-align: center;
+    padding-top: 0.2em;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+}
+#chat:hover{
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+@media (max-width: 900px){
+    #profil{
+        width: 90vw;
+        padding: 4vh 5vw;
+        text-align: center;
+        position: relative;
+        height: 85vh;
+    }
+    
+    #profil, #profpic, #nama, #bio, #references{
+        margin: 15px 20px;
+    }
+    
+    #profpic img{
+        width: 200px;
+        height: 200px;
+    }
+    #bio{
+        text-align: center;
+    }
+    #bio h4{
+        font-size: 15px;
+    }
+    #references .view{
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+    }
+
+    #content{
+        width:100vw;
+        padding:4vh 5vw;
+        margin-top: 0px;
+        height:auto;
+        display:inline-block;
+        text-align: center;
+        margin-right: 0px;
+    }
+    #about{
+        margin: 30px 0;
+    }
+    #references{
+        margin: 30px 0
+    }
+}
