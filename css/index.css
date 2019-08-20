@@ -131,10 +131,12 @@ ul li:hover{
     background-color: white !important;
     color: #A92142;
     cursor: pointer;
+    border-top: 7px solid #A92142 !important;
 }
 .active{
     background-color: white !important;
     color: #A92142!important;
+    border-top: 7px solid #A92142 !important;
 }
 
 
