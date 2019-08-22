@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Evanescent</title>
+  <link rel="icon" href="./assets/prof.jpg">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/hover.css">
+<link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body class="container">
+  <div id="main">
+    <div class="header">
+      <ul class="list-group list-group-horizontal-sm justify-content-between text-center">
+        <li class="list-group-item active" onclick="funSesi1()">ABOUT</li>
+        <li class="list-group-item" onclick="funSesi2()">PORTOFOLIO</li>
+        <li class="list-group-item" onclick="funSesi3()">REFERENCE</li>
+      </ul>
+    </div>
+    <div class="content">
+      <section id="about">
+        <div id="title">
+          <div class="title">
+            <h3>ABOUT ME</h3>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div id="data" class="col-md-4 animated fadeInLeft">
+            <div class="row justify-content-between">
+              <div class="col-md-6 badgee">Nama</div>
+              <div class="col-md-6">Pratama Yoga Santosa</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-md-6 badgee">Date of Birth</div>
+              <div class="col-md-6">December, 16th 1999</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-md-6 badgee">Address</div>
+              <div class="col-md-6">Wisma Kost Al- Muhayat, Citeureup, Sukabirus</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-md-6 badgee">Phone</div>
+              <div class="col-md-6">082226651838</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-md-6 badgee">Email</div>
+              <div class="col-md-6">pratamayo16@gmail.com</div>
+            </div>
+          </div>
+          <div id="foto" class="col-md-4 text-center animated fadeInUp">
+            <div id="profpic"><img src="assets/prof.jpg" width="200px" class="img-fluid" alt=""></div>
+            <div id="btn-chat">
+              <a href="https://api.whatsapp.com/send?phone=6282226651838" class="hvr-float-shadow">Chat Me!</a>
+            </div>
+          </div>
+          <div id="bio" class="col-md-4 animated fadeInRight">This is web of someone who want to be a good programmer which person who called himself No Brain Person, interested to Web Development, Artificial Intelligence, and something about Programming. A person who have a good responsibility, fast learner, and milk lover.</div>
+        </div>
+      </section>
+      <section id="portofolio">
+        <div id="title">
+          <div class="title">
+            <h3>MY PORTOFOLIO </h3>
+          </div>
+        </div>
+        <div class="isi-porto">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project1.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: Project to make electronic vote for OSIS</i></p>
+                </div>
+                <div class="social">
+                  <h5>Evotte</h5>
+                  <p><i>WEBDEV</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project6.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: OOP project as final assignment of semester</i></p>
+                </div>
+                <div class="social">
+                  <h5>Electronic Voting</h5>
+                  <p><i>JAVA</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project2.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: WEBPRO project for duplicate website (tumblr) as final assignment of semester</i></p>
+                </div>
+                <div class="social">
+                  <h5>Pic-Q</h5>
+                  <p><i>WEBDEV</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project4.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: Make some simple face recognition</i></p>
+                </div>
+                <div class="social">
+                  <h5>Simple face recognition</h5>
+                  <p><i>PYTHON</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project3.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: Make some object detection, but at least that is become color detection</i></p>
+                </div>
+                <div class="social">
+                  <h5>Simple Object / Color Detection</h5>
+                  <p><i>PYTHON</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 hvr-grow-shadow animated fadeInUp">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="assets/project5.PNG">
+                </div>
+                <div class="team-content">
+                  <p><i>Description: Simple FUZZY LOGIC algorithm</i></p>
+                </div>
+                <div class="social">
+                  <h5>Fuzzy Logic</h5>
+                  <p><i>JAVA</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reference">
+        <div id="title">
+          <div class="title">
+            <h3>MORE ABOUT ME</h3>
+          </div>
+        </div>
+        <div class="isi-ref animated zoomIn">
+          <div class="view view-first">
+            <img src="./assets/github.png" height="100%" />
+            <div class="mask">
+              <h2>Github</h2>
+              <p>Want to see my work ?</p>
+              <a href="https://github.com/evanezcent" target="_blank" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+          <div class="view view-first">
+            <img src="./assets/linkedin.png" height="100%" />
+            <div class="mask">
+              <h2>LinkedIn</h2>
+              <p>Want to know about me ?</p>
+              <a href="https://www.linkedin.com/in/pratamays" target="_blank" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+<footer class="page-footer">
+  <div class="footer-copyright text-center py-3">©2019 <span class="author">Made by Tama</span></div>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+
+    $('.list-group').on('click', 'li', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    var x1 = document.getElementById("about");
+    var x2 = document.getElementById("portofolio");
+    var x3 = document.getElementById("reference");
+
+    function funSesi1() {
+      x1.style.display = "block"
+      x2.style.display = "none"
+      x3.style.display = "none"
+    }
+    function funSesi2() {
+      x1.style.display = "none"
+      x2.style.display = "block"
+      x3.style.display = "none"
+      var x = document.getElementById("main");
+      x.style.height = "auto"
+    }
+    function funSesi3() {
+      x1.style.display = "none"
+      x2.style.display = "none"
+      x3.style.display = "block"
+    }
+  </script>
+</footer>
+
+</html>
