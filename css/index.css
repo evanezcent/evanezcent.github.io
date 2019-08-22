@@ -310,4 +310,8 @@ footer{
     .isi-ref{
         display: block;
     }
+    #bio, #data{
+        padding-right: 7vh;
+        padding-left: 7vh;
+    }
 }
