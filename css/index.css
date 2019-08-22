@@ -9,6 +9,10 @@ body{
     height: 85vh;
 }
 
+#portofolio, #reference{
+    display: none;
+}
+
 #title{
     padding-top: 3vh;
     margin-bottom: 2vh;
