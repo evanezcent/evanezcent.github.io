@@ -166,11 +166,6 @@ ul li:hover{
 .badgee{
     font-weight: bold;
 }
-.img-fluid{
-    margin-top: 5vh;
-    border-radius: 50%;
-    border: 10px solid #A92142;
-}
 #btn-chat{
     margin-top: 3vh;
 }
