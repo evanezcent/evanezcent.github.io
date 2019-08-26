@@ -200,6 +200,7 @@ footer{
 }
 .image-area
 {
+    box-shadow: 5px 5px 5px 3px grey;
     position: relative;
     margin-top: 2vh;
     margin-bottom: 2vh;
