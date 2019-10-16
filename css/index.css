@@ -12,7 +12,9 @@ body{
 #portofolio, #reference{
     display: none;
 }
-
+#portofolio{
+    padding: 0.5em;
+}
 #title{
     padding-top: 3vh;
     margin-bottom: 1vh;
@@ -157,6 +159,7 @@ body{
 .content{
     background-color: white;
     color: #A92142;
+    height: auto;
 }
 #bio{
     text-align: justify;
@@ -193,9 +196,8 @@ body{
     display: block;
 }
 .isi-porto .row{
-    margin-left: 2vh;
-    margin-right: 2vh;
-    justify-content: space-between;
+    margin: 2vh;
+    justify-content: center;
 }
 footer{
     height: auto;
@@ -380,5 +382,11 @@ footer .row{
     }
     footer .row{
         text-align: start
+    }
+    .header{
+        height: 150px;
+    }
+    .content{
+        position: relative;
     }
 }
