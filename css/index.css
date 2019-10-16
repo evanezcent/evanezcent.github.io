@@ -362,7 +362,7 @@ footer .row{
     font-size: 13px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 580px){
     #main{
         height: auto;
     }
