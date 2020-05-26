@@ -10,13 +10,28 @@
 </head>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="assets/jquery.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="https://kit.fontawesome.com/12f0e4d468.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/hover.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/card.css">
-<script src="https://kit.fontawesome.com/12f0e4d468.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css"/>
+<link href="https://cdn.datatables.net/responsive/2.2.4/css/responsive.bootstrap.min.css"/>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.4/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.4/js/responsive.bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body class="container">
@@ -30,9 +45,6 @@
       </ul>
     </div>
     <div class="content">
-      <div class="popup-btn-wrapper">
-        <button class="dismiss-popup-btn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
-      </div>
       <section id="about">
         <div id="title">
           <div class="title">
@@ -89,6 +101,18 @@
           </div>
         </div>
         <div id="port" class="isi-porto">
+          <table class="table dt-responsive nowrap" id="myTable" style="width: 100%;">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Repository Name</th>
+                <th scope="col">Repository Link</th>
+                <th scope="col">Language</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
         </div>
       </section>
       <section id="reference">
@@ -145,14 +169,12 @@
   </div>
 
   <div class="footer-copyright">
-    <p>© 2019 Developed by <b>Tama</b></p>
+    <p>© 2020 Developed by <b>Tama</b></p>
   </div>
 
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   <script>
+    getRepo();
     setTimeout(function () {
       document.getElementById("loading").classList.add("animated");
       document.getElementById("loading").classList.add("fadeOut");
@@ -172,70 +194,31 @@
       const res = await fetch(url);
       const result = await res.json();
 
-      var port = document.getElementById('port');
-      var idx = 0
-      var idx1 = 1
+      var idx = 1
+      var arr = []
 
-      for (var i = 0; i <= Math.floor(result.length / 2); i++) {
-        var list = '<div class="col-md-6">' +
-          '<div class="card">' +
-          '<div class="card__side card__side--front">' +
-          '<!-- Front Content -->' +
-          '<div class="card__cont">' +
-          '<b><span>' + result[idx]["name"] + '</span></b>' +
-          '</div>' +
-          '</div>' +
-          '<div class="card__side card__side--back">' +
-          '<!-- Back Content -->' +
-          '<div class="card__cta">' +
-          ' <p><i class="fas fa-code"></i> ' + result[idx]["language"] +
-          '<br />' +
-          '<i class="fas fa-star-half-alt"></i> ' + result[idx]["stargazers_count"] +
-          '<br />' +
-          '<i class="fas fa-code-branch"></i></i> ' + result[idx]["forks_count"] +
-          ' <br />' +
-          '<a href="' + result[idx]["html_url"] + '" class="see-more hvr-sink" target="blank"><i class="fas fa-link"></i> See more</a>' +
-          '<br />' +
-          ' </p>' +
-          '</div>' +
-          '</div>' +
-          '</div>' + 
-          '</div> ' +
-          ' <div class="col-md-6">' +
-          '<div class="card">' +
-          '<div class="card__side card__side--front">' +
-          '<!-- Front Content -->' +
-          '<div class="card__cont">' +
-          '<b><span>' + result[idx1]["name"] + '</span></b>' +
-          '</div>' +
-          '</div>' +
-          '<div class="card__side card__side--back">' +
-          '<!-- Back Content -->' +
-          '<div class="card__cta">' +
-          ' <p><i class="fas fa-code"></i> ' + result[idx1]["language"] +
-          '<br />' +
-          '<i class="fas fa-star-half-alt"></i> ' + result[idx1]["stargazers_count"] +
-          '<br />' +
-          '<i class="fas fa-code-branch"></i></i> ' + result[idx1]["forks_count"] +
-          ' <br />' +
-          '<a href="' + result[idx1]["html_url"] + '" class="see-more hvr-sink" target="blank"><i class="fas fa-link"></i> See more</a>' +
-          '<br />' +
-          ' </p>' +
-          '</div>' +
-          '</div>' +
-          '</div>'
-        idx += 2
-        idx1 += 2
 
-        port.innerHTML += '<div class="row">' + list + '</div>';
+      for (var i = 0; i < result.length; i++) {
+        arr.push([
+          idx,
+          result[i]["full_name"],
+          '<a href="' + result[i]["html_url"] + '">Watch Repository</a>',
+          result[i]["language"]
+        ])
+        idx += 1
       }
-
+      $(document).ready(function () {
+        $('#myTable').DataTable({
+          data: arr,
+          responsive: true
+        });
+      });
     }
   </script>
   <script>
-    // $('.list-group').on('click', 'li', function () {
-    //   $(this).addClass('active').siblings().removeClass('active');
-    // });
+    $('.list-group').on('click', 'li', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
 
     var x1 = document.getElementById("about");
     var x2 = document.getElementById("portofolio");
@@ -247,7 +230,6 @@
       x3.style.display = "none"
     }
     function funSesi2() {
-      getRepo();
       x1.style.display = "none"
       x2.style.display = "block"
       x3.style.display = "none"

@@ -77,7 +77,11 @@
 .kecilin{
     font-size: 12px;;
 }
+.popup-btn-wrapper{
+    z-index: 999;
+}
 .dismiss-popup-btn {
+    z-index: 999;
 	position: fixed;
 	top: 50%;
 	right: 20px;
