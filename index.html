@@ -21,14 +21,16 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/card.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css"/>
-<link href="https://cdn.datatables.net/responsive/2.2.4/css/responsive.bootstrap.min.css"/>
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css" />
+<link href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap.min.css" /> -->
+<link href="https://cdn.datatables.net/responsive/2.2.4/css/responsive.bootstrap.min.css" />
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script> -->
 <script src="https://cdn.datatables.net/responsive/2.2.4/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.4/js/responsive.bootstrap.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/responsive/2.2.4/js/responsive.bootstrap.min.js"></script> -->
 
 <link rel="stylesheet" href="css/index.css">
 
@@ -91,7 +93,7 @@
               <a href="https://api.whatsapp.com/send?phone=6282226651838" class="hvr-float-shadow">Chat Me!</a>
             </div>
           </div>
-          <div id="bio" class="col-md-4 animated fadeInRight">This is web of someone who want to be a good programmer which person who called himself No Brain Person, interested to Web Development, Artificial Intelligence, and something about Programming. A person who have a good responsibility, fast learner, and milk lover.</div>
+          <div id="bio" class="col-md-4 animated fadeInRight">Hi !, you can call me <b>Tama</b>. I am undergraduate computer science student that interested at technology, programming, software development, and AI. So, glad to see you :D</div>
         </div>
       </section>
       <section id="portofolio">
@@ -101,9 +103,9 @@
           </div>
         </div>
         <div id="port" class="isi-porto">
-          <table class="table dt-responsive nowrap" id="myTable" style="width: 100%;">
+          <table class="table table-responsive" id="myTable" style="width: 100%;">
             <thead class="thead-dark">
-              <tr>
+              <tr style="width: 100vw!important;">
                 <th scope="col">No</th>
                 <th scope="col">Repository Name</th>
                 <th scope="col">Repository Link</th>
@@ -127,7 +129,9 @@
             <div class="mask">
               <h2>Github</h2>
               <p>Want to see my work ?</p>
-              <a href="https://github.com/evanezcent" target="_blank" class="btn btn-dark">Read More</a>
+              <div class="d-flex justify-content-center">
+                <a href="https://github.com/evanezcent" target="_blank" class="btn btn-dark">Open</a>
+              </div>
             </div>
           </div>
           <div class="view view-first">
@@ -135,7 +139,9 @@
             <div class="mask">
               <h2>LinkedIn</h2>
               <p>Want to know about me ?</p>
-              <a href="https://www.linkedin.com/in/pratamays" target="_blank" class="btn btn-dark">Read More</a>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/pratamays" target="_blank" class="btn btn-dark">Visit</a>
+              </div>
             </div>
           </div>
         </div>
@@ -145,13 +151,14 @@
 </body>
 <footer class="footer">
   <div class="row">
-    <div class="col-md-4 mt-2">
-      <h5>SOON</h5>
+    <div class="col-md-6 mt-2">
+      <div class="footer-socmed">
+        <div>
+          <img src="./assets/logo.png" alt="unknown" width="150px">
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 mt-2">
-      <h5>SOON</h5>
-    </div>
-    <div class="col-md-4 mt-2">
+    <div class="col-md-6 mt-2">
       <div class="footer-socmed">
         <div class="footer-title-list">
           <h5>Social Media</h5>
@@ -160,8 +167,8 @@
           <ul>
             <li><a target="blank" href="https://github.com/evanezcent"><i class="fab fa-github"></i> evanezcent</a></li>
             <li><a target="blank" href="https://linkedin.com/in/pratamays"><i class="fab fa-linkedin-in"></i> pratamays</i></a></li>
-            <li><a target="blank" href="https://www.instagram.com/pratamays/"><i class="fab fa-instagram"></i> pratamays_</i></a></li>
-            <li><a target="blank" href="https://twitter.com/pratamays_"><i class="fab fa-twitter"></i> pratamays</i></a></li>
+            <li><a target="blank" href="https://www.instagram.com/pratamays/"><i class="fab fa-instagram"></i> pratamays</i></a></li>
+            <li><a target="blank" href="https://twitter.com/pratamays_"><i class="fab fa-twitter"></i> pratamays_</i></a></li>
           </ul>
         </div>
       </div>
@@ -207,11 +214,10 @@
         ])
         idx += 1
       }
-      $(document).ready(function () {
-        $('#myTable').DataTable({
-          data: arr,
-          responsive: true
-        });
+
+      var table = $('#myTable').DataTable({
+        data: arr,
+        responsive: true
       });
     }
   </script>
