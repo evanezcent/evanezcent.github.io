@@ -396,12 +396,14 @@ table, .dataTables_scrollHeadInner{
     }
     .isi-ref{
         display: block;
+        padding-bottom: 1px;
     }
     #bio, #data{
         padding-right: 7vh;
         padding-left: 7vh;
     }
     .header{
+        margin-top:2vh;
         height: 150px;
     }
     .content{
