@@ -52,12 +52,10 @@ section{
     background-color: white !important;
     color: #A92142;
     cursor: pointer;
-    border-top: 7px solid #A92142 !important;
 }
 .header .active{
     background-color: white !important;
     color: #A92142!important;
-    border-top: 7px solid #A92142 !important;
 }
 #foto{
     margin-bottom: 5vh;
@@ -404,7 +402,7 @@ table, .dataTables_scrollHeadInner{
     }
     .header{
         margin-top:2vh;
-        height: 150px;
+        height: inherit;
     }
     .content{
         position: relative;
