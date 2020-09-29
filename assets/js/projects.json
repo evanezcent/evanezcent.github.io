@@ -1,0 +1,71 @@
+{
+    "data":[
+        {
+            "id": 0,
+            "name": "EDULIFE",
+            "github":"https://github.com/asbp/edu-life",
+            "image":"/assets/project/1.PNG"
+        },
+        {
+            "id": 1,
+            "name": "IGNITER",
+            "github":"https://github.com",
+            "image":"/assets/project/2.PNG"
+        },
+        {
+            "id": 2,
+            "name": "ADMIN KITCHEN",
+            "github":"https://github.com",
+            "image":"/assets/project/3.PNG"
+         
+        },
+        {
+            "id": 3,
+            "name": "BUMM AL-FALAH",
+            "github":"https://github.com",
+            "image":"/assets/project/4.PNG"
+        },
+        {
+            "id": 4,
+            "name": "Evotte",
+            "github":"https://github.com",
+            "image":"/assets/project/5.png"
+        },
+        {
+            "id": 5,
+            "name": "Pic - Q",
+            "github":"https://github.com/evanezcent/WEBPRO-Project",
+            "image":"/assets/project/6.png"
+        },
+        {
+            "id": 3,
+            "name": "Face Recognition",
+            "github":"https://github.com/evanezcent/Simple-Face-Recognition",
+            "image":"/assets/project/7.png"
+        },
+        {
+            "id": 7,
+            "name": "Fuzzy Logic",
+            "github":"https://github.com/evanezcent/Fuzzy-Logic",
+            "image":"/assets/project/8.png"
+        },
+        {
+            "id": 8,
+            "name": "Alu",
+            "github":"https://github.com/evanezcent/PBO-Project",
+            "image":"/assets/project/9.png"
+        },
+        {
+            "id": 9,
+            "name": "Gender Classifier using CNN",
+            "github":"https://github.com/evanezcent/SYSREC-Project",
+            "image":"/assets/project/10.PNG"
+        },
+        {
+            "id": 10,
+            "name": "I-Cloak",
+            "github":"https://github.com/evanezcent/I-Cloak",
+            "image":"/assets/project/11.PNG"
+        }
+    ]
+}
