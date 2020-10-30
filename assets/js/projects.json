@@ -9,20 +9,20 @@
         {
             "id": 1,
             "name": "IGNITER",
-            "github":"https://github.com",
+            "github":"https://github.com/evanezcent",
             "image":"/assets/project/2.PNG"
         },
         {
             "id": 2,
             "name": "ADMIN KITCHEN",
-            "github":"https://github.com",
+            "github":"https://github.com/evanezcent",
             "image":"/assets/project/3.PNG"
          
         },
         {
             "id": 3,
             "name": "BUMM AL-FALAH",
-            "github":"https://github.com",
+            "github":"https://github.com/evanezcent",
             "image":"/assets/project/4.PNG"
         },
         {
@@ -65,6 +65,12 @@
             "id": 10,
             "name": "I-Cloak",
             "github":"https://github.com/evanezcent/I-Cloak",
+            "image":"/assets/project/11.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Danaku",
+            "github":"https://github.com/evanezcent/danaku",
             "image":"/assets/project/11.PNG"
         }
     ]
