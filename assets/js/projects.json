@@ -4,74 +4,94 @@
             "id": 0,
             "name": "EDULIFE",
             "github":"https://github.com/asbp/edu-life",
-            "image":"/assets/project/1.PNG"
+            "image":"/assets/project/1.PNG",
+            "tag":"Flutter"
         },
         {
             "id": 1,
             "name": "IGNITER",
             "github":"https://github.com/evanezcent",
-            "image":"/assets/project/2.PNG"
+            "image":"/assets/project/2.PNG",
+            "tag":"Node, React"
         },
         {
             "id": 2,
             "name": "ADMIN KITCHEN",
             "github":"https://github.com/evanezcent",
-            "image":"/assets/project/3.PNG"
+            "image":"/assets/project/3.PNG",
+            "tag":"Laravel"
          
         },
         {
             "id": 3,
             "name": "BUMM AL-FALAH",
             "github":"https://github.com/evanezcent",
-            "image":"/assets/project/4.PNG"
+            "image":"/assets/project/4.PNG",
+            "tag":"Laravel"
         },
         {
             "id": 4,
             "name": "Evotte",
             "github":"https://github.com/evanezcent/E-voting",
-            "image":"/assets/project/5.png"
+            "image":"/assets/project/5.png",
+            "tag":"Node"
         },
         {
             "id": 5,
             "name": "Pic - Q",
             "github":"https://github.com/evanezcent/WEBPRO-Project",
-            "image":"/assets/project/6.png"
+            "image":"/assets/project/6.png",
+            "tag":"Codeigniter"
         },
         {
-            "id": 3,
+            "id": 6,
             "name": "Face Recognition",
             "github":"https://github.com/evanezcent/Simple-Face-Recognition",
-            "image":"/assets/project/7.png"
+            "image":"/assets/project/7.png",
+            "tag":"Python"
         },
         {
             "id": 7,
-            "name": "Fuzzy Logic",
-            "github":"https://github.com/evanezcent/Fuzzy-Logic",
-            "image":"/assets/project/8.png"
+            "name": "Opolah (Eccomerce Apps)",
+            "github":"https://github.com/evanezcent/opolah",
+            "image":"/assets/project/0.png",
+            "tag":"Flutter"
         },
         {
             "id": 8,
-            "name": "Alu",
-            "github":"https://github.com/evanezcent/PBO-Project",
-            "image":"/assets/project/9.png"
+            "name": "Face Mask Classifier",
+            "github":"https://github.com/evanezcent/Face-Mask-Detection",
+            "image":"/assets/project/0.png",
+            "tag":"Python"
         },
         {
             "id": 9,
             "name": "Gender Classifier using CNN",
             "github":"https://github.com/evanezcent/SYSREC-Project",
-            "image":"/assets/project/10.PNG"
+            "image":"/assets/project/10.PNG",
+            "tag":"Python"
         },
         {
             "id": 10,
             "name": "I-Cloak",
             "github":"https://github.com/evanezcent/I-Cloak",
-            "image":"/assets/project/11.jpg"
+            "image":"/assets/project/11.jpg",
+            "tag":"Python"
         },
         {
             "id": 11,
             "name": "Danaku",
             "github":"https://github.com/evanezcent/danaku",
-            "image":"/assets/project/11.png"
+            "image":"/assets/project/11.png",
+            "tag":"Flutter"
+        }
+        ,
+        {
+            "id": 12,
+            "name": "SMK-Dev Hospital App",
+            "github":"https://github.com/evanezcent/smkdev",
+            "image":"/assets/project/0.png",
+            "tag":"Flutter"
         }
     ]
 }

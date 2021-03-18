@@ -55,11 +55,11 @@
 
 .img-wrapper p
 {
+	font-size: 10px;
 	background: #20b5a3;
 	font-family: arial;
 	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: center; 
 	margin: 0;
 	padding: 10px 0;
 	position: absolute;
@@ -84,6 +84,21 @@
 	padding: 0;
 	list-style: none;
 	background: rgba(255,255,255,0);
+}
+
+.img-wrapper .tag
+{
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+	right: 0;
+	margin: 0;
+	padding: 4px; 
+	font-size: 10px;
+	background-color: #333;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: right;
 }
 
 .img-wrapper ul li
@@ -141,3 +156,14 @@
 	color: #fff;
 	background: rgba(255,255,255,0);
 }
+
+.img-wrapper:hover .tag
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover .tag 
+{
+	transition-delay: .2s;
+}
+ 
